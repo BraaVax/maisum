@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUJU e LULU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde-claro: #d8f9d8;
+      --verde-medio: #a6e3a1;
+      --verde-escuro: #397f49;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--verde-claro);
+      color: #2f3e2f;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: var(--verde-medio);
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: var(--verde-escuro);
+      position: relative;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      animation: floatHeart 4s ease-in-out infinite;
+    }
+
+    @keyframes floatHeart {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-20px); opacity: 0.5; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Pacifico', cursive;
+      color: var(--verde-escuro);
+      text-align: center;
+    }
+
+    .frase {
+      background: #f0fff0;
+      border-left: 5px solid var(--verde-escuro);
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+      font-size: 1.1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .frase:hover {
+      transform: scale(1.02);
+    }
+
+    .spotify {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .spotify iframe {
+      border-radius: 12px;
+      width: 100%;
+      height: 80px;
+    }
+
+    .yoshi {
+      width: 100px;
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      animation: pulse 3s infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--verde-medio);
+      font-size: 1rem;
+      color: #345634;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .hidden {
+      display: none;
+      font-style: italic;
+      margin-top: 10px;
+      color: #2a4f2a;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    JUJU e LULU
+    <span class="heart" style="top: 10px; left: 20px;">💚</span>
+    <span class="heart" style="top: 10px; right: 20px;">💚</span>
+  </header>
+
+  <section>
+    <h2>Nosso Amor...</h2>
+    <p style="text-align: center;">Você fez tudo ter mais cor, mais risadas e mais sentido. Com você, até os dias comuns estão se tornando especias.</p>
+
+    <div class="frase">Amor, deve ser chato que sempre que eu preciso falar sobre algo mais sério eu faço isso mandando um site... mas vai se acostumando kakaka.
+Eu só queria que, depois de ler isso que você vai ler, você me falasse alguma coisa, ok?
+Bom, pelo menos eu acho que não deixo dúvidas de que te amo, e me preocupo com cada detalhe quando se trata de você. Tento prestar atenção em cada coisinha que você demonstra. Posso parecer meio cabeça vazia por não perceber algumas coisas, é que eu tô meio no mundo da lua ultimamente, pensando em muitas coisas.
+
+Isso é um problema sério que eu tenho: qualquer mínima coisa que acontece, ou parece estar acontecendo, faz eu pensar 24h nisso, criando paranoias e cenários fictícios de como tudo vai terminar.
+Um exemplo é hoje, que eu achei que você tava mais fechada comigo na saída — tanto que nem respondeu meu tchau e meu te amo.
+Coisas simples... mas essas coisas simples são as mais importantes pra mim. Ainda mais numa sexta, que é o último dia da semana que a gente se vê.
+E também, o que mais me fez pensar é que um horário antes tava tudo perfeito, tudo normal…
+O que faz eu ficar pensando: “que merda eu fiz?”
+Porque, pra mim, não vem outra coisa na cabeça além de:
+"A culpa é minha. Deve ser que eu fiz algo errado."
+
+Provavelmente é só coisa da minha cabeça, mas você pediu que, mesmo que eu achasse que fosse, era pra eu falar.
+Mas não quero que você mude por minha causa. Afinal, eu gosto de você do jeitinho que você é.
+
+Só queria que, quando você não estiver bem de manhã, ou estiver do jeito que estava hoje, me avisasse o porquê — ou me falasse se não é por minha causa.
+Porque ficar achando que é, e não saber o que fazer, me destrói aos pouquinhos...
+
+Eu tenho mais coisa pra falar, mas esse texto já tá muito longo S2</div>
+    <div class="frase"> não esquece do botão no final da pagina.</div>
+    
+
+    <div class="spotify">
+      <p>🎵 Essa musica veio do nada na playlist e me lembrou de você, então gostei❣️:</p>
+      <iframe src="https://open.spotify.com/embed/track/1Mta8Wl8SCnOv9C6MdTrnr?utm_source=generator"></iframe>
+    </div>
+  </section>
+
+  <img src="fotos/yoshi-coração.png" class="yoshi" alt="Yoshi fofo" />
+
+  <footer onclick="mostrarMensagem()">
+    💌 Clica aqui pra ver uma mensagem secreta
+    <div class="hidden" id="mensagem">Se o mundo acabar amanhã, pelo menos eu amei você hoje.💚</div>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      const msg = document.getElementById('mensagem');
+      msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
